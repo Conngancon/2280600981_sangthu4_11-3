@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bai 10</title>
+</head>
+<body>
+
+<div id="size"></div>
+
+<script>
+function showSize() {
+    document.getElementById("size").innerHTML =
+        "Width: " + window.innerWidth + "px<br>" +
+        "Height: " + window.innerHeight + "px";
+}
+
+window.onload = showSize;
+window.onresize = showSize;
+</script>
+
+</body>
+</html>

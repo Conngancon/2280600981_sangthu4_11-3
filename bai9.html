@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bai 9</title>
+</head>
+<body>
+
+<button onclick="showImage()">Show Image</button>
+<div id="img"></div>
+
+<script>
+let images = [
+    "http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",
+    "http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",
+    "http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg"
+];
+
+function showImage() {
+    let i = Math.floor(Math.random() * images.length);
+    document.getElementById("img").innerHTML =
+        `<img src="${images[i]}" width="300">`;
+}
+</script>
+
+</body>
+</html>
